@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-g">
-    <title>La mia Pagina Web</title>
+    <meta charset="UTF-8">
+    <title>Pannello di Controllo</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ciao Mondo!</h1>
-    <p>Questa è la mia prima pagina ospitata su GitHub Pages.</p>
+
+    <div class="container">
+        <div class="control-row">
+            <button onclick="toggleState('luce-0', 'status-0', 'ACCESO', 'SPENTO')">CHILLER</button>
+            <div id="luce-0" class="luce rossa"></div>
+            <span id="status-0" class="status">SPENTO</span>
+        </div>
+
+        <div class="control-row">
+            <button onclick="toggleState('luce-1', 'status-1', 'ACCESE', 'SPENTE')">VENTOLE</button>
+            <div id="luce-1" class="luce rossa"></div>
+            <span id="status-1" class="status">SPENTE</span>
+        </div>
+
+        <div class="control-row">
+            <button onclick="toggleState('luce-2', 'status-2', 'APERTO', 'CHIUSO')">PORTONE INTERNO</button>
+            <div id="luce-2" class="luce rossa"></div>
+            <span id="status-2" class="status">CHIUSO</span>
+        </div>
+
+        <div class="control-row">
+            <button onclick="toggleState('luce-3', 'status-3', 'APERTO', 'CHIUSO')">PORTONE ESTERNO</button>
+            <div id="luce-3" class="luce rossa"></div>
+            <span id="status-3" class="status">CHIUSO</span>
+        </div>
+
+        <div class="control-row">
+            <button onclick="toggleState('luce-4', 'status-4', 'IN CORSO', 'TERMINATE')">OPERAZIONI NELLA HALL</button>
+            <div id="luce-4" class="luce rossa"></div>
+            <span id="status-4" class="status">TERMINATE</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
