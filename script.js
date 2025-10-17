@@ -1,6 +1,6 @@
 // --- CONFIGURAZIONE ---
 // INCOLLA QUI IL TUO URL DI GOOGLE APPS SCRIPT
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/library/d/1kpUGZGc1gg6Xcr7rCNdMH1GRWOM7ncGsw55HMvb2z1cmtSy-7fKMMON3/3'; 
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzHUTAYnagn6A9IBfw2u32oylj85Nxnut7LrFaXe0j-DBWeHdLqgX0CTJETBecTNy0/exec'; 
 // --------------------
 
 // Oggetto per mappare i dati dei controlli
