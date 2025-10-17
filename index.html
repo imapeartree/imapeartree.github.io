@@ -9,35 +9,39 @@
 <body>
 
     <div class="container">
-        <div class="control-row">
-            <button onclick="toggleState('CHILLER', 'luce-0', 'status-0', 'ACCESO', 'SPENTO')">CHILLER</button>
-            <div id="luce-0" class="luce rossa"></div>
-            <span id="status-0" class="status">SPENTO</span>
+        <div id="loading-indicator">Caricamento stato...</div>
+    
+        <div class="control-row" id="control-CHILLER">
+            <button data-luce-id="luce-0" data-status-id="status-0" data-testo-verde="ACCESO" data-testo-rosso="SPENTO">CHILLER</button>
+            <div id="luce-0" class="luce"></div>
+            <span id="status-0" class="status"></span>
         </div>
 
-        <div class="control-row">
-            <button onclick="toggleState('VENTOLE', 'luce-1', 'status-1', 'ACCESE', 'SPENTE')">VENTOLE</button>
-            <div id="luce-1" class="luce rossa"></div>
-            <span id="status-1" class="status">SPENTE</span>
+        <div class="control-row" id="control-VENTOLE">
+            <button data-luce-id="luce-1" data-status-id="status-1" data-testo-verde="ACCESE" data-testo-rosso="SPENTE">VENTOLE</button>
+            <div id="luce-1" class="luce"></div>
+            <span id="status-1" class="status"></span>
         </div>
 
-        <div class="control-row">
-            <button onclick="toggleState('PORTONE INTERNO', 'luce-2', 'status-2', 'APERTO', 'CHIUSO')">PORTONE INTERNO</button>
-            <div id="luce-2" class="luce rossa"></div>
-            <span id="status-2" class="status">CHIUSO</span>
+        <div class="control-row" id="control-PORTONE INTERNO">
+            <button data-luce-id="luce-2" data-status-id="status-2" data-testo-verde="APERTO" data-testo-rosso="CHIUSO">PORTONE INTERNO</button>
+            <div id="luce-2" class="luce"></div>
+            <span id="status-2" class="status"></span>
         </div>
 
-        <div class="control-row">
-            <button onclick="toggleState('PORTONE ESTERNO', 'luce-3', 'status-3', 'APERTO', 'CHIUSO')">PORTONE ESTERNO</button>
-            <div id="luce-3" class="luce rossa"></div>
-            <span id="status-3" class="status">CHIUSO</span>
+        <div class="control-row" id="control-PORTONE ESTERNO">
+            <button data-luce-id="luce-3" data-status-id="status-3" data-testo-verde="APERTO" data-testo-rosso="CHIUSO">PORTONE ESTERNO</button>
+            <div id="luce-3" class="luce"></div>
+            <span id="status-3" class="status"></span>
         </div>
 
-        <div class="control-row">
-            <button onclick="toggleState('OPERAZIONI NELLA HALL', 'luce-4', 'status-4', 'IN CORSO', 'TERMINATE')">OPERAZIONI NELLA HALL</button>
-            <div id="luce-4" class="luce rossa"></div>
-            <span id="status-4" class="status">TERMINATE</span>
+        <div class="control-row" id="control-OPERAZIONI NELLA HALL">
+            <button data-luce-id="luce-4" data-status-id="status-4" data-testo-verde="IN CORSO" data-testo-rosso="TERMINATE">OPERAZIONI NELLA HALL</button>
+            <div id="luce-4" class="luce"></div>
+            <span id="status-4" class="status"></span>
         </div>
+        
+        <button id="reset-button">RESET</button>
     </div>
 
     <script src="script.js"></script>
