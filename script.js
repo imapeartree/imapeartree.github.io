@@ -1,6 +1,6 @@
 // --- CONFIGURAZIONE ---
 // INCOLLA QUI IL TUO URL DI GOOGLE APPS SCRIPT
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzHUTAYnagn6A9IBfw2u32oylj85Nxnut7LrFaXe0j-DBWeHdLqgX0CTJETBecTNy0/exec'; 
+const GOOGLE_SCRIPT_URL = 'URL_DELLA_TUA_APP_WEB'; 
 // --------------------
 
 // Oggetto per mappare i dati dei controlli
@@ -34,6 +34,12 @@ const CONTROLS = {
         statusId: 'status-4',
         testoVerde: 'IN CORSO',
         testoRosso: 'TERMINATE'
+    },
+    'PARABOLA': { // (NUOVO)
+        luceId: 'luce-5',
+        statusId: 'status-5',
+        testoVerde: 'APERTA',
+        testoRosso: 'CHIUSA'
     }
 };
 
